@@ -8,7 +8,7 @@ def ConquestCampaign (N, M, L, batalion):
     D = 1                                        # Day 1 - landing
     for i in range (len(batalion)):
         if i % 2 == 0:
-            Round[batalion[i]][batalion[i+1]] = D
+            Round[batalion[i]-1][batalion[i+1]-1] = D
     if M*N == 1:
         return 1
     C = 0
