@@ -11,7 +11,6 @@ def sortlist(x):
                 
 def SynchronizingTables (N, ids, salary):
     ids2 = []
-    # Creating copy of list "ids"
     for i in range (N):             # create a copy of the array  "ids"
         ids2.append(ids[i])         
     ids2 = sortlist(ids2)           # sorting ids2  in ascending order
