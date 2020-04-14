@@ -12,5 +12,4 @@ def MassVote(N, Votes):
         res1 = 'majority '
     else:
         res1 = 'minority '
-    result = res1 + 'winner ' + str(K)
-    return result 
+    return res1 + 'winner ' + str(K)
