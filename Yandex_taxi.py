@@ -7,9 +7,9 @@ def Unmanned(L, N, track):
     while S < L:          
         Step = True     
         for j in range(N): 
-            track[j][4] = not ((t % (track[j][1] + track[j][2])) < track[j][1])   
+            track[j][3] = not ((t % (track[j][1] + track[j][2])) < track[j][1])   
             if S == track[j][0]:        
-                Step = Step and track[j][4]
+                Step = Step and track[j][3]
         if Step:
             S += 1  
         t += 1
