@@ -4,10 +4,8 @@ def MaximumDiscount( N, price):
     collection = []
     set_ = []
     for i in range (N):
-        if (i + 1) % 3 != 0:
-            set_.append(Copy[i])
-        else:
-            set_.append(Copy[i])
+        set_.append(Copy[i])
+        if (i + 1) % 3 == 0:
             collection.append(set_)
             set_ = []
     for i in range (len(collection)):
