@@ -9,6 +9,5 @@ def MaximumDiscount( N, price):
             collection.append(set_)
             set_ = []
     for i in range (len(collection)):
-        if len (collection[i]) > 2:
-            discont += collection[i][2]
+        discont += collection[i][2]
     return discont
