@@ -23,6 +23,7 @@ def ShopOLAP(N, items):
                 k += 1   
             elif S[i][1] == S[i+1][1] and S[i][0] > S[i+1][0]:
                 S[i], S[i+1] = S[i+1], S[i]
+                k += 1
     for i in range(len(S)):
         S[i] = ' '.join(S[i])
     return S
