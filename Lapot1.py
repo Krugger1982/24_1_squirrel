@@ -44,9 +44,7 @@ def BastShoe(command):
         N += 1
     elif S[0] == 3 and S[1].isdigit():
         line = ind(int(S[1]), position[N][0])
-        del position [:N+1]
-        N = 0
-        position.insert(0, [line, S[0]])
+        return line
     elif S[0] == 4 and S[1] == '' and (position[N][1] == 1 or position[N][1] == 2) and (N > 0):
         N -= 1
     elif S[0] == 5 and S[1] == '' and N < (len(position)-1):
