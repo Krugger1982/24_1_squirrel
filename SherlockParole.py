@@ -9,8 +9,8 @@ def  SherlockValidString(s):
             S.remove(temp)
     average = int(sum(pattern)/len(pattern))
     for i in range (len(pattern)):
-        if pattern[i] - average == 1 or pattern[i] - average == 0:
-            N += pattern[i] - average
+        if (pattern[i] - average) in (0, 1):
+            N += (pattern[i] - average)
         else:
             return False
     return N < 2
