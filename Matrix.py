@@ -1,7 +1,8 @@
 def  MatrixTurn(Matrix, M, N, T):
     A = []
     for i in range(len(Matrix)):
-        A.append(list(Matrix[i]))
+        A.append(list(Matrix[0]))
+        del Matrix[0]
     perimetr = []
     temp = []
     while len(A) > 2 and len (A[0]) > 2:               # Разбираем матрицу на "периметры"
@@ -91,4 +92,4 @@ def  MatrixTurn(Matrix, M, N, T):
                         A[-(i - R - 6 * j - 2)].insert(0, perimetr[j][i])   # Левый столбец                  
     for i in range(len(A)):
         A[i] = ''.join(A[i])
-    return A
+        Matrix.append(A[i])
