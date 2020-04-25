@@ -1,7 +1,7 @@
 def Transform(A, N):
     B = []
     for i in range(N):
-        for j in range(N - i - 1):
+        for j in range(N - i):
             k = i + j
             B.append(max(A[j:k+1]))
     return B
