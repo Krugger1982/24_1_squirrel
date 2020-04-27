@@ -21,4 +21,4 @@ def BalancedParentheses(N):
     for i in result:
         if i not in n:
             n.append(i)
-    return ' 'join(n)
+    return ' '.join(n)
