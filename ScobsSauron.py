@@ -21,6 +21,6 @@ def BalancedParentheses(N):
                 Count0 += 1
             if Count0 > Count1:
                 Ability = False
-        if Ability and A[i][0] == '(' and A[i][-1] == ')' and Count1 == Count0 and len(A[i]) == 2*N:
+        if Ability and A[i][0] == '(' and A[i][-1] == ')' and Count1 == Count0 and len(A[i]) == 2*N and A[i] not in B:
             B.append(A[i])
     return ' '.join(B)
