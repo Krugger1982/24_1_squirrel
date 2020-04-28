@@ -8,8 +8,7 @@ def gen_breckets(N, prefix='', A = []):
 
 def BalancedParentheses(N):
     M = 2*N
-    k = ''
-    A = gen_breckets(M, k)
+    A = gen_breckets(M)
     B = []
     for i in range(len(A)):
         Ability = True
